@@ -1,0 +1,114 @@
+header {
+    padding: 50px 0 50px;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        transition: all 0.2s ease;
+        background-color: #fff;
+        padding: 20px 0 20px;
+    }
+    &.active {
+        background: #ECF2F83D;
+        top: 0;
+        .navbar {
+            background-color: transparent;
+        }
+    }
+}
+.navbar-expand-lg {
+    @include media-breakpoint-down(lg) {
+        .navbar-collapse {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 100%;
+            background: #232323;
+            z-index: 99;
+            .navbar-nav {
+                background: unset !important;
+                border: 0;
+                &:first-child {
+                    padding-top: $spacer;
+                    padding-left: $spacer * 1.5;
+                    padding-right: $spacer * 1.5;
+                }
+                &:last-child {
+                    padding-bottom: $spacer;
+                    padding-left: $spacer * 1.5;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        @include media-breakpoint-down(xl) {
+            position: absolute;
+            right: 15px;
+            border: 0;
+        }
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .navbar-nav {
+        column-gap: 2rem;
+        border: 0;
+        border-radius: 100px;
+        @media (max-width:991px) {
+            background: unset;
+            border: 0;
+            border-radius: unset;
+            padding: 0;
+        }
+        .nav-item {
+            @include media-breakpoint-down(lg) {
+                border-bottom: 1px solid #303030;
+            }
+        }
+        .nav-link {
+            color: #111;
+            font-weight: 500;
+            font-size: 18px;
+            display: inline-flex;
+            padding: 0;
+            position: relative;
+            transition: all 0.5s ease-in-out;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: $spacer * 0.5;
+                color: #aaa;
+                font-size: 14px;
+                padding: 16px 0;
+            }
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                color: #01d679;
+            }
+        }
+    }
+    .btn-app {
+        border-radius: 20px;
+        padding: 15px 30px 15px;
+        color: #ffffff;
+        background-color: #01d679;
+        border: 0;
+        span {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+        &:hover {
+            background-color: #111;
+            transition: $transition-base;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-left: 16px;
+            margin-bottom: 16px;
+        }
+    }
+}

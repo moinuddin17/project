@@ -1,0 +1,341 @@
+.main-content {
+    h3 {
+        font-size: 36px;
+        font-weight: 400;
+        color: #c2c2c2;
+    }
+    h2 {
+        font-size: 60px;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 60px;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        color: #555;
+    }
+}
+.appSection {
+    .app-content {
+        h3 {
+            font-size: 48px;
+            font-weight: 400;
+            color: #c2c2c2;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 65px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 60px;
+        }
+        .app-btn {
+            position: relative;
+            display: inline-flex;
+            border: 2px solid #01d679;
+            border-radius: 25px;
+            align-items: center;
+            text-decoration: none;
+            padding: 5px 0px;
+            transition: $transition-base;
+            overflow: hidden;
+            background-color: #01d679;
+            cursor: pointer;
+            &::after {
+                content: '';
+                background-color: #111;
+                position: absolute;
+                width: 100%;
+                left: -100%;
+                top: 0;
+                bottom: 0;
+                z-index: 0;
+                transition: $transition-base;
+            }
+            span {
+                // background-color: inherit;
+                background-position: top right;
+                padding: 10px 28px 10px 18px !important;
+                color: #fff;
+                font-weight: 600;
+                font-size: 20px;
+                display: inline-flex;
+                margin-right: $spacer * .5;
+                position: relative;
+                z-index: 1;
+            }
+            svg {
+                margin-left: 15px;
+                position: relative;
+                z-index: 1;
+            }
+            &:hover {
+                border: 2px solid #111;
+                &::after {
+                    left: 0%;
+                }
+            }
+        }
+    }
+}
+.featuresSection {
+    padding-top: 40px;
+    padding-bottom: 120px;
+	.features-cont {
+        h3 {
+            font-size: 48px;
+			font-weight: 400;
+			color: #c2c2c2;
+        }
+		h2 {
+			font-size: 60px;
+			font-weight: 600;
+			color: #111;
+			margin-bottom: 60px;
+		}
+		p {
+			font-size: 24px;
+			font-weight: 400;
+			color: #555;
+		}
+	}
+}
+.testimonialSection {
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 140px 0px 140px;
+    .testimonial-card {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 60px 45px;
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            color: #111;
+            margin: 30px 0 30px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #555;
+        }
+    }
+    .play-btn {
+        width: 110px;
+        height: 110px;
+        background-color: #fafafa;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.endlessSection {
+    padding-top: 150px;
+}
+.plannerSection {
+    .title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .icon {
+            width: 79px;
+            height: 79px;
+            border-radius: 20px;
+            background-color: #e3fff3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.icon2 {
+                background-color: #ffeed2;
+            }
+        }
+        .text {
+            h3 {
+                font-size: 24px;
+                font-weight: 400;
+                color: #111;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.notifiedSection {
+    padding: 50px 0 160px;
+}
+.pricingSection {
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 160px 0px 160px;
+    .pricing-content {
+        h3 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff;
+        }
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+    .price-card {
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 60px 10px;
+        h2 {
+            font-size: 90px;
+            font-weight: 500;
+            color: #111;
+            &.premium {
+                color: #01d679;
+            }
+        }
+        h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #959595;
+            margin-bottom: 16px;
+        }
+        h4 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #acacac;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #111;
+        }
+        .basic-btn {
+            position: relative;
+            display: inline-flex;
+            border: 2px solid #111;
+            border-radius: 40px;
+            align-items: center;
+            text-decoration: none;
+            padding: 0px 45px;
+            transition: $transition-base;
+            overflow: hidden;
+            background-color: inherit;
+            cursor: pointer;
+            &::after {
+                content: '';
+                background-color: #000;
+                position: absolute;
+                width: 100%;
+                left: -100%;
+                top: 0;
+                bottom: 0;
+                z-index: 0;
+                transition: $transition-base;
+            }
+            span {
+                background-color: inherit;
+                background-position: top right;
+                padding: 10px 28px 10px 18px !important;
+                color: #01d679;
+                font-weight: 600;
+                font-size: 20px;
+                display: inline-flex;
+                margin-right: $spacer * .5;
+                position: relative;
+                z-index: 1;
+            }
+            svg {
+                margin-right: 15px;
+                position: relative;
+                z-index: 1;
+            }
+            &:hover {
+                border: 2px solid #000;
+                span {
+                    color: #fff;
+                }
+                &::after {
+                    left: 0%;
+                }
+            }
+        }
+        .premium-btn {
+            position: relative;
+            display: inline-flex;
+            border: 2px solid #111;
+            border-radius: 40px;
+            align-items: center;
+            text-decoration: none;
+            padding: 0px 45px;
+            transition: $transition-base;
+            overflow: hidden;
+            background-color: #111;
+            cursor: pointer;
+            &::after {
+                content: '';
+                background-color: #01d679;
+                position: absolute;
+                width: 100%;
+                left: -100%;
+                top: 0;
+                bottom: 0;
+                z-index: 0;
+                transition: $transition-base;
+            }
+            span {
+                // background-color: inherit;
+                background-position: top right;
+                padding: 10px 28px 10px 18px !important;
+                color: #fff;
+                font-weight: 600;
+                font-size: 20px;
+                display: inline-flex;
+                margin-right: $spacer * .5;
+                position: relative;
+                z-index: 1;
+            }
+            svg {
+                margin-right: 15px;
+                position: relative;
+                z-index: 1;
+            }
+            &:hover {
+                border: 2px solid #01d679;
+                &::after {
+                    left: 0%;
+                }
+            }
+        }
+    }
+}
+.contactSection {
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 160px 0px 160px;
+    .reachus-content {
+        h3 {
+            font-size: 36px;
+            font-weight: 400;
+            color: #fff;
+        }
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}

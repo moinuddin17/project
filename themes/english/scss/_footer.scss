@@ -1,0 +1,96 @@
+footer {
+    padding: 120px 0px;
+    .copyright {
+        p {
+            span {
+                color: #02ca72;
+            }
+        }
+    }
+    .social-links {
+        ul {
+            li {
+                a {
+                    svg {
+                        path {
+                            fill: #000;
+                        }
+                    }
+                    &:hover {
+                        svg {
+                            path {
+                                fill: #02ca72;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .title {
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #111;
+            margin-bottom: 24px;
+        }
+    }
+    .usefull-links {
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                a {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #83868e;
+                    transition: all 500ms ease;
+                    &:hover {
+                        color: #c4c4c4;
+                    }
+                }
+            }
+        }
+    }
+    .contact-title {
+        h3 {
+            font-size: 18px;
+            font-weight: 500;
+            color: #111;
+            margin-bottom: 18px;
+        }
+    }
+    .contact-links {
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: #111;
+        }
+    }
+}
+.scroll-top {
+    width: $spacer * 3;
+    height: $spacer * 3;
+    position: fixed;
+    bottom: $spacer * 3;
+    right: $spacer * 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: $border-radius-pill;
+    border: 2px solid #cecece;
+    z-index: 10;
+    opacity: 0;
+    transition: $transition-base;
+    &.active {
+        opacity: 1;
+    }
+    &:hover {
+        background: #02ca72;
+    }
+    @include media-breakpoint-down(sm) {
+        bottom: 5rem;
+        right: 1rem;
+    }
+}
